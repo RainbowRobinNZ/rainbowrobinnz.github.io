@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= "utf-8">
+    <title>Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="styles/styles.min.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/pawprint.jpg" alt="pawprint" width="55" height="55">
+        <h1>Snazzy Paws Grooming</h1>
+        <img src="images/pawprint.jpg" alt="pawprint" width="55" height="55">
+    </header>
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section id="contact">
+            <h2>Contact Us:</h2>
+            <div id="location">
+                <gmp-map
+                center="-37.7833,175.2833"
+                zoom="10"
+                map-id="DEMO_MAP_ID"
+                style="height: 500px" >
+                </gmp-map>
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHv0QNtkZIBi1JMBLi6kUq1nIvRIAUBH0&libraries=maps"
+                defer> </script>
+                <div id="location-text">
+                    <p><b>Located in Hamilton NZ</b></p> 
+                    <div id="contact-hours">
+                        <p>Opening Hours:</p>
+                        <p>Monday to Saturday - 9am to 5pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form" id="contact-form">
+                <p>Any questions or concerns please contact us below</p>
+                <form>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="mobile">Phone Number</label>
+                        <input type="tel" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div id="footer-text">
+            <p>Snazzy Paws Grooming</p>
+            <p>Hamilton</p>
+        </div>
+        <div class="opening-hours">        
+            <p>Opening Hours:</p>
+            <p>Monday to Saturday - 9am to 5pm</p>
+        </div>
+    </footer>
+</body>
+</html>
